@@ -62,17 +62,17 @@
 \maincolumn{
 %%%% Main space
 
-\textbf{What} goes here.
+\textbf{GatorGrouper} 
 
-\textbf{Why} goes here.
+generates \textbf{intuitive} groups
 
-\textbf{How} goes here.
+to save \textbf{time} and \textbf{headache}
 
 }{
 %%%% Bottom space
 
 %% QR code
-\qrcode{img/Gatorgrouper}{img/smartphoneWhite}{
+\compactqrcode{img/Gatorgrouper}{
 \textbf{Take a picture} to
 \\visit our GitHub
 }
@@ -114,11 +114,14 @@ Here is a diagram:
 \end{center}
 
 \section{Background}
-The background of this project
-
+GatorGrouper is a software engineering project created throught the course of
+seven weeks of the Computer Science 203: Software Engineering class at Allegheny
+College led by Dr. Gregory Kapfhammer. 
 
 \section{Conclusion}
-This is a great poster format!
+The tool has not yet been rigorously tested for effectiveness, though the
+algorithms provided along with a rigorous test suite give a high degree of
+confidence in the tool's correctness.
 
 %% This fills the space between the content and the logo
 \vfill
@@ -129,38 +132,39 @@ This is a great poster format!
 }{
 %%%%%%%% RIGHT COLUMN
 
-\textbf{Details of Algorithms}
+\section{\textbf{Details of Algorithms}}
 
-Random Grouping Method
-\begin{center}
+\section{Random Grouping}
 % Commutative diagram with edges passing under/over
 % Author: Stefan Kottwitz, http://texblog.net/
 % Retrieved from: http://www.texample.net/tikz/examples/commutative-diagram/
-\includegraphics[width=\textwidth]{img/tikzexample2}
-\end{center}
+% sample diagram: \includegraphics[width=\textwidth]{img/tikzexample2}
+This will randomly group the list of students, and is the default grouping method
+used.
 
-Round-robin Grouping Method
-\begin{center}
+\section{Round-robin Grouping}
 % Commutative diagram with edges passing under/over
 % Author: Stefan Kottwitz, http://texblog.net/
 % Retrieved from: http://www.texample.net/tikz/examples/commutative-diagram/
-\includegraphics[width=\textwidth]{img/tikzexample2}
-\end{center}
+% sample diagram: \includegraphics[width=\textwidth]{img/tikzexample2}
+The round-robin method takes each category of students and assignes them to
+groups one at a time until there are no more students of the catagory left, then
+moves on to the next category.
 
-Kernighan-Lin Grouping Method
-\begin{center}
+\section{Kernighan-Lin Grouping}
 % Commutative diagram with edges passing under/over
 % Author: Stefan Kottwitz, http://texblog.net/
 % Retrieved from: http://www.texample.net/tikz/examples/commutative-diagram/
-\includegraphics[width=\textwidth]{img/tikzexample2}
-\end{center}
+% sample diagram: \includegraphics[width=\textwidth]{img/tikzexample2}
 
-Genetic Grouping Method
-\begin{center}
+\section{Genetic Grouping}
 % Commutative diagram with edges passing under/over
 % Author: Stefan Kottwitz, http://texblog.net/
 % Retrieved from: http://www.texample.net/tikz/examples/commutative-diagram/
-\includegraphics[width=\textwidth]{img/tikzexample2}
-\end{center}
+% sample diagram: \includegraphics[width=\textwidth]{img/tikzexample2}
+
+\section Acknowledgments
+% add acknowledgments here
+
 }
 \end{document}
